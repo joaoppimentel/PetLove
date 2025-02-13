@@ -1,7 +1,5 @@
 import { RiFacebookBoxFill, RiInstagramFill, RiYoutubeFill, RiArrowUpSLine, RiArrowDownSLine } from "react-icons/ri";
 import { MdOutlineFileCopy } from "react-icons/md";
-import clickWeb from '../assets/svg/clickWeb.svg'
-import completeLogo from '../assets/svg/completeLogo.svg'
 
 export const Footer = () => {
 
@@ -16,7 +14,7 @@ export const Footer = () => {
         <>
             <footer className="w-full h-1/2 py-14 px-4 bg-lime-900/85 flex flex-col items-center md:flex-row md:justify-between md:h-3/4 md:px-12">
                 <div className="h-full w-1/2 flex-col gap-12 hidden md:flex">
-                    <img className="w-1/2" src={completeLogo} alt="" />
+                    <img className="w-1/2" src="svg/completeLogo.svg" alt="" />
                     <div className="flex gap-4">
                         <nav className="w-2/3 flex flex-wrap">
                             <a href="#" className="w-1/2 text-white font-semibold text-lg py-2 transition-all hover:text-yellow-400">Sobre nós</a>
@@ -68,7 +66,6 @@ export const Footer = () => {
                         <br />
                         CNPJ: 43.660.696/0001-95
                     </p>
-                    <img className="md:hidden" src={clickWeb} alt="" />
                 </div>
             </footer>
             <button className="w-full h-24 bg-lime-900/95 px-10 flex justify-center md:justify-between items-center" onClick={goTop}>
@@ -78,7 +75,6 @@ export const Footer = () => {
                 <div className=" md:-translate-x-36">
                     <RiArrowUpSLine color="white" size={70} />
                 </div>
-                <img className="hidden md:block" src={clickWeb} alt="" />
             </button>
 
         </>

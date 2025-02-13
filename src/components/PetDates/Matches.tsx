@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { matchesList } from '../../matchesList';
-import Hearth from '../../assets/svg/hearth.svg'
 
 export const Matches = () => {
 
@@ -32,12 +31,12 @@ export const Matches = () => {
             {matchesList.slice(0, itemsToShow).map((item, index) => (
                 <div key={index} className='flex flex-col items-center py-8 gap-4'>
                     <div className='relative flex gap-4 w-full px-2'>
-                        <img className=' size-44 object-cover rounded-full' src={item.maleImage} alt={item.maleName} />
-                        <img className='absolute size-14 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 animate-pulse' src={Hearth} alt="" />
-                        <img className='size-44 object-cover rounded-full' src={item.femaleImage} alt={item.femaleName} />
+                        <img className=' size-44 object-cover rounded-full' src={item.male.img} alt={item.male.name} />
+                        <img className='absolute size-14 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 animate-pulse' src="svg/hearth.svg" alt="" />
+                        <img className='size-44 object-cover rounded-full' src={item.female.img} alt={item.female.name} />
                     </div>
 
-                    <p className='text-lg text-lime-800 font-bold'>{item.maleName} e {item.femaleName}</p>
+                    <p className='text-lg text-lime-800 font-bold'>{item.male.name} e {item.female.name}</p>
                 </div>
             ))}
 

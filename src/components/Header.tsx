@@ -1,6 +1,5 @@
-import Logo from '../assets/svg/logo.svg'
 import { FaRegUser } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
     return (
@@ -16,7 +15,7 @@ export const Header = () => {
                     <input className='hidden' type="checkbox" name="menu" id="menu" />
                     <span className="hidden font-bold text-lime-700 md:block">Menu</span>
                 </label>
-                <Link to="/"><img className='relative md:scale-150 md: translate-y-3 z-50' src={Logo} alt="Pett Love" /></Link>
+                <Link to="/"><img className='relative md:scale-150 md: translate-y-3 z-50' src="svg/logo.svg" alt="Pett Love" /></Link>
                 <label className='size-14 bg-lime-700 rounded-full flex items-center justify-evenly md:w-32 md:h-12 md:px-4' htmlFor="enter">
                     <FaRegUser color='white' size={32} />
                     <input className='hidden' type="checkbox" name="enter" id="enter" />

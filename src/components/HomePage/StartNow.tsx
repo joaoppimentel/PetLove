@@ -1,8 +1,6 @@
 import {Link} from 'react-router-dom'
 
 export const StartNow = () => {
-    
-
     return (
         <div className="flex flex-col items-center gap-6 py-6 mt-20">
             <h4 className="font-semibold text-gray-500 text-lg">COMO FUNCIONA</h4>
